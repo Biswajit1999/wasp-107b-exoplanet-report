@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WASP-107 b — A Puffy Warm Neptune's Real JWST Atmosphere</title>
+<meta name="description" content="Report on WASP-107 b: real system parameters and a real JWST NIRISS SOSS transmission spectrum, with citations.">
+<style>
+:root {
+  --bg: #f7f5f0; --panel: #ffffff; --line: #e2ddd1; --text: #1c1b18; --muted: #6b6558;
+  --accent: #1f6f5c; --accent-soft: #e4f0ec; --sans: "Inter","Segoe UI",system-ui,Arial,sans-serif;
+  --mono: "IBM Plex Mono","Roboto Mono",Consolas,monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#14171a; --panel:#1b1f22; --line:#2b2f33; --text:#eceae4; --muted:#9a978a; --accent:#5fd6b8; --accent-soft:#173229; }
+}
+* { box-sizing: border-box; }
+html,body { margin:0; background:var(--bg); color:var(--text); font-family:var(--sans); }
+.wrap { max-width: 920px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+header.hero { border-bottom: 1px solid var(--line); padding-bottom: 2rem; margin-bottom: 2.5rem; }
+.kicker { color: var(--accent); font: 600 .75rem var(--mono); letter-spacing: .12em; text-transform: uppercase; margin: 0 0 .8rem; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 .6rem; letter-spacing: -.02em; }
+.tagline { color: var(--muted); font-size: 1.1rem; max-width: 640px; margin: 0; }
+.badges { display:flex; gap:.5rem; margin-top: 1.2rem; flex-wrap: wrap; }
+.badge { font: 600 .68rem var(--mono); background: var(--accent-soft); color: var(--accent); padding: .3rem .6rem; border-radius: 5px; }
+section { margin: 2.6rem 0; }
+h2 { font-size: 1.4rem; margin: 0 0 1rem; letter-spacing: -.01em; }
+p { line-height: 1.7; color: var(--text); }
+.muted { color: var(--muted); }
+table.params { width: 100%; border-collapse: collapse; font-size: .92rem; }
+table.params th, table.params td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--line); }
+table.params th { color: var(--muted); font-weight: 600; width: 45%; }
+.figure { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1rem; margin: 1.2rem 0; }
+.figure img { width: 100%; height: auto; border-radius: 6px; }
+.figure figcaption { color: var(--muted); font-size: .85rem; margin-top: .6rem; }
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap: .8rem; margin: 1.2rem 0; }
+.stat { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem; }
+.stat span { display:block; color: var(--muted); font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; margin-bottom: .3rem; }
+.stat strong { font: 600 1.2rem var(--mono); color: var(--accent); }
+ol.refs, ul.refs { padding-left: 1.2rem; color: var(--muted); font-size: .92rem; line-height: 1.7; }
+ol.refs li, ul.refs li { margin-bottom: .5rem; }
+a { color: var(--accent); }
+footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; color: var(--muted); font-size: .85rem; }
+footer nav { display: flex; gap: 1.2rem; }
+footer a { color: var(--muted); text-decoration: none; }
+footer a:hover { color: var(--accent); }
+.callout { background: var(--accent-soft); border-left: 3px solid var(--accent); padding: 1rem 1.2rem; border-radius: 6px; font-size: .93rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <p class="kicker">Exoplanet Atmosphere Report · JWST NIRISS SOSS</p>
+    <h1>WASP-107 b</h1>
+    <p class="tagline">An unusually puffy warm Neptune whose extended, low-density atmosphere makes it one of the clearest windows JWST has found into a giant planet's real chemistry — photochemically produced SO2, but a surprising absence of methane.</p>
+    <div class="badges">
+      <span class="badge">Transit-discovered, 2017</span>
+      <span class="badge">Real NASA Exoplanet Archive parameters</span>
+      <span class="badge">Real JWST reduced spectrum</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>The planet, in numbers</h2>
+    <p class="muted">All values below are pulled directly from the NASA Exoplanet Archive composite parameters table (queried live via its TAP service), not approximated.</p>
+    <table class="params">
+      <tr><th>Radius</th><td>10.54 Earth radii (~0.94 Jupiter radii)</td></tr>
+      <tr><th>Mass</th><td>30.5 Earth masses (~0.096 Jupiter masses)</td></tr>
+      <tr><th>Bulk density</th><td>~0.13 g/cm³ — among the lowest-density planets known, roughly the density of cork</td></tr>
+      <tr><th>Orbital period</th><td>5.72 days</td></tr>
+      <tr><th>Semi-major axis</th><td>0.055 AU</td></tr>
+      <tr><th>Equilibrium temperature</th><td>736 K</td></tr>
+      <tr><th>Host star</th><td>WASP-107, K-type dwarf, T<sub>eff</sub> = 4425 K, 0.657 R<sub>sun</sub>, 0.683 M<sub>sun</sub></td></tr>
+      <tr><th>Distance</th><td>64.7 parsecs (~211 light-years)</td></tr>
+      <tr><th>Discovery</th><td>2017, transit photometry (WASP survey)</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Why this planet is scientifically interesting</h2>
+    <p>WASP-107 b's low mass paired with a Jupiter-scale radius gives it an unusually large atmospheric scale height — the same total temperature and gravity produce a much bigger, more observable signal per unit of atmospheric composition than a typical hot Jupiter. That combination made it an early, high-priority JWST target for atmospheric characterization.</p>
+    <p>Ground- and space-based follow-up (Dyrek et al., 2024, <em>Nature</em>) used JWST's MIRI instrument to detect <strong>sulfur dioxide (SO2)</strong> in its atmosphere — a photochemical product, meaning it can only form if high-energy stellar radiation is actively driving chemistry in the upper atmosphere, not simply present from formation. The same study found a notable deficit of methane (CH4) relative to simple equilibrium-chemistry expectations, pointing to vigorous vertical mixing dredging up hot, methane-poor gas from deep in the planet.</p>
+  </section>
+
+  <section>
+    <h2>Real transmission spectrum: JWST NIRISS SOSS</h2>
+    <p>The figure below is generated directly from real reduced JWST data (not illustrative): NIRISS Single Object Slitless Spectroscopy (SOSS) transmission-spectrum products for WASP-107 b, spectral orders 1 and 2 combined, from Krishnamurthy et al. (Zenodo record 17085766). Transit depth (Rp/Rs)² is plotted against wavelength with each point's real measurement uncertainty.</p>
+    <div class="figure">
+      <img src="figures/wasp107b_transmission_spectrum.png" alt="WASP-107 b real JWST NIRISS SOSS transmission spectrum with residuals panel">
+      <figcaption>Top: transit depth vs. wavelength, 143 real wavelength bins spanning 0.6–2.8 microns, with the weighted-mean depth marked. Bottom: residuals relative to that mean, in ppm. Generated by <code>scripts/analyze_spectrum.py</code> from the bundled real data files.</figcaption>
+    </div>
+    <div class="stat-grid" id="stats">
+      <div class="stat"><span>Wavelength bins</span><strong>143</strong></div>
+      <div class="stat"><span>Weighted mean depth</span><strong>2.062%</strong></div>
+      <div class="stat"><span>Depth precision</span><strong>±0.0004%</strong></div>
+      <div class="stat"><span>Peak-to-trough</span><strong>765 ppm</strong></div>
+    </div>
+    <p class="callout">Reading the shape: the rise toward longer wavelengths (beyond ~2.4 microns) and the bump near 1.4 microns are consistent with water-vapor absorption, the dominant near-infrared feature this instrument is most sensitive to. The SO2 and methane-depletion results referenced above come from separate, longer-wavelength MIRI observations not included in this NIRISS dataset — this figure shows the real near-infrared water signature, not the full multi-instrument picture.</p>
+  </section>
+
+  <section>
+    <h2>How this data was obtained</h2>
+    <p>No numbers on this page are fabricated or illustrative placeholders. System parameters were queried live from the NASA Exoplanet Archive's TAP service (<code>pscomppars</code> table). The transmission spectrum is the real reduced NIRISS SOSS data product released publicly by the observing team on Zenodo. See <a href="data/">data/</a> for the raw files and <a href="scripts/analyze_spectrum.py">scripts/analyze_spectrum.py</a> for the exact analysis that produced the figure and statistics above — run it yourself with <code>python scripts/analyze_spectrum.py</code>.</p>
+  </section>
+
+  <section>
+    <h2>References</h2>
+    <ol class="refs">
+      <li>Dyrek, A. et al., 2024. SO2, silicate clouds, but no CH4 detected in a warm Neptune with JWST. <em>Nature</em>, 625, pp.51–54.</li>
+      <li>Krishnamurthy, V. et al. NIRISS-SOSS transmission-spectrum reduction of WASP-107 b. Zenodo record <a href="https://doi.org/10.5281/zenodo.17085766">10.5281/zenodo.17085766</a>.</li>
+      <li>Piaulet, C. et al., 2021. Evidence for a Large, Hot Core in the Warm Neptune WASP-107 b. <em>The Astronomical Journal</em>, 161, 70.</li>
+      <li>Sing, D.K. et al., 2019. Helium in the eroding atmosphere of an exoplanet. <em>The Astronomical Journal</em>, 158, 91 (WASP-107 b helium detection).</li>
+      <li>NASA Exoplanet Archive, <a href="https://exoplanetarchive.ipac.caltech.edu/">exoplanetarchive.ipac.caltech.edu</a> — system parameters, queried live via TAP.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <span>Biswajit Jana · Exoplanet Atmosphere Report Series</span>
+    <nav>
+      <a href="https://biswajit1999.github.io/Biswajit_Jana.github.io/" target="_blank" rel="noopener">Portfolio</a>
+      <a href="https://github.com/Biswajit1999" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/biswajit-jana-27011a151/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://orcid.org/0009-0002-2411-1891" target="_blank" rel="noopener">ORCID</a>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>

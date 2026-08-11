@@ -1,0 +1,12 @@
+quantity,value,unit
+n_wavelength_bins,143,count
+wavelength_min,0.6036,micron
+wavelength_max,2.7872,micron
+weighted_mean_transit_depth,0.020620,(Rp/Rs)^2
+weighted_mean_transit_depth_error,0.000004,(Rp/Rs)^2
+depth_scatter_rms,0.000131,(Rp/Rs)^2
+peak_depth,0.021113,(Rp/Rs)^2
+peak_wavelength,2.7872,micron
+trough_depth,0.020348,(Rp/Rs)^2
+trough_wavelength,2.2886,micron
+peak_to_trough_amplitude,765.2,ppm
