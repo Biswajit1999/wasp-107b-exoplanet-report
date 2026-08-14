@@ -1,5 +1,9 @@
 # WASP-107 b — Exoplanet Atmosphere Report
 
+<img src="images/thumbnail.png" alt="Artist's concept of WASP-107 b" width="360">
+
+*AI-generated artist's concept — not a real photograph. See the report for actual JWST NIRISS SOSS data.*
+
 A puffy, low-density warm Neptune, and one of the clearest JWST
 atmospheric detections to date: photochemically produced sulfur
 dioxide, and methane at a fraction of the abundance simple chemistry

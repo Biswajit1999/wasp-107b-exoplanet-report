@@ -45,6 +45,9 @@ footer nav { display: flex; gap: 1.2rem; }
 footer a { color: var(--muted); text-decoration: none; }
 footer a:hover { color: var(--accent); }
 .callout { background: var(--accent-soft); border-left: 3px solid var(--accent); padding: 1rem 1.2rem; border-radius: 6px; font-size: .93rem; }
+.hero-banner { margin: 1.5rem 0 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); }
+.hero-banner img { width: 100%; height: auto; max-height: 440px; object-fit: cover; display: block; }
+.ai-credit { color: var(--muted); font-size: .72rem; font-style: italic; margin: .5rem 0 0; }
 </style>
 </head>
 <body>
@@ -59,6 +62,11 @@ footer a:hover { color: var(--accent); }
       <span class="badge">JWST reduced spectrum</span>
     </div>
   </header>
+
+  <div class="hero-banner">
+    <img src="images/hero.png" alt="Artist's concept of the puffy warm Neptune WASP-107 b">
+  </div>
+  <p class="ai-credit">AI-generated artist's concept of WASP-107 b — not a real photograph. All data and figures in this report come from actual JWST NIRISS SOSS observations (see below).</p>
 
   <section>
     <h2>The planet, in numbers</h2>
@@ -80,6 +88,10 @@ footer a:hover { color: var(--accent); }
     <h2>Why this planet is scientifically interesting</h2>
     <p>WASP-107 b's low mass paired with a Jupiter-scale radius gives it an unusually large atmospheric scale height — the same total temperature and gravity produce a much bigger, more observable signal per unit of atmospheric composition than a typical hot Jupiter. That combination made it an early, high-priority JWST target for atmospheric characterization.</p>
     <p>Dyrek et al. (2024, <em>Nature</em>) used JWST's MIRI instrument to detect <strong>sulfur dioxide (SO2)</strong> in its atmosphere — a photochemical product, meaning it can only form if high-energy stellar radiation is actively driving chemistry in the upper atmosphere, not simply present from formation — and reported only an upper limit on methane (CH4), well below simple equilibrium-chemistry predictions. A follow-up NIRSpec study, Sing et al. (2024, <em>Nature</em>), pushed further and detected CH4 directly at 4.2σ, at an abundance of about 1.0 ± 0.5 ppm — roughly three orders of magnitude below what equilibrium chemistry alone would predict at this temperature. Read together, the two results tell a consistent story: methane isn't absent, it's severely depleted, most likely by the same vigorous vertical mixing that dredges up hot, methane-poor gas from deep in the planet and by ongoing photochemical destruction.</p>
+    <div class="figure">
+      <img src="images/3d-render.png" alt="Close-up 3D-rendered concept of WASP-107 b's extended, low-density atmosphere">
+      <p class="ai-credit">AI-generated 3D-render-style concept of WASP-107 b's puffy atmosphere — not an actual image of the planet.</p>
+    </div>
   </section>
 
   <section>
@@ -101,6 +113,10 @@ footer a:hover { color: var(--accent); }
   <section>
     <h2>Data and method notes</h2>
     <p>System parameters were queried live from the NASA Exoplanet Archive's TAP service (<code>pscomppars</code> table). The transmission spectrum is the reduced NIRISS SOSS data product released publicly by the observing team on Zenodo. See <a href="data/">data/</a> for the raw files and <a href="scripts/analyze_spectrum.py">scripts/analyze_spectrum.py</a> for the exact analysis that produced the figure and statistics above (<code>python scripts/analyze_spectrum.py</code> to rerun it).</p>
+    <div class="figure">
+      <img src="images/instrument.png" alt="AI-generated illustration of the James Webb Space Telescope">
+      <p class="ai-credit">AI-generated illustration of the James Webb Space Telescope, whose NIRISS instrument took the real transmission spectrum plotted above (with the SO2 and methane detections referenced above coming from separate MIRI and NIRSpec observations). Not an official mission photograph — see <a href="https://www.jwst.nasa.gov/">NASA/JWST</a> for real imagery.</p>
+    </div>
   </section>
 
   <section>
