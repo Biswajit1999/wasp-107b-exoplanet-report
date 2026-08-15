@@ -1,8 +1,10 @@
 # WASP-107 b — Exoplanet Atmosphere Report
 
-<img src="images/thumbnail.png" alt="Artist's concept of WASP-107 b" width="360">
+<p align="center">
+  <img src="images/thumbnail.png" alt="Artist's concept of WASP-107 b" width="360">
+</p>
 
-*AI-generated artist's concept — not a real photograph. See the report for actual JWST NIRISS SOSS data.*
+<p align="center"><em>AI-generated artist's concept — not a real photograph. See the report for actual JWST NIRISS SOSS data.</em></p>
 
 A puffy, low-density warm Neptune, and one of the clearest JWST
 atmospheric detections to date: photochemically produced sulfur
@@ -10,8 +12,7 @@ dioxide, and methane at a fraction of the abundance simple chemistry
 predicts. This repo pulls system parameters and a reduced JWST
 transmission spectrum directly, with no synthetic placeholders.
 
-**[Open the full report](index.html)** (open locally in a browser, or serve with
-`python -m http.server` from this directory).
+**[Open the full report](https://biswajit1999.github.io/wasp-107b-exoplanet-report/)** — the live GitHub Pages version. You can also open `index.html` locally in a browser, or serve it with `python -m http.server` from this directory.
 
 ## Data sources
 
