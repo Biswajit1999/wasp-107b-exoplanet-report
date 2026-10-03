@@ -1,0 +1,46 @@
+{
+  "source": "https://doi.org/10.5281/zenodo.17085766",
+  "broad_spectrum": {
+    "n_bins": 143,
+    "wavelength_min_micron": 0.6036,
+    "wavelength_max_micron": 2.7872,
+    "weighted_mean_depth": 0.020620496896880426,
+    "weighted_mean_depth_error": 3.692328426788103e-06,
+    "scarlet_shape_diagnostic": {
+      "n_bins": 143,
+      "fitted_offset_ppm": -15.908003737637598,
+      "fitted_offset_error_ppm": 3.692328426788103,
+      "diagonal_chi2": 476.7858680079793,
+      "diagonal_chi2_per_bin": 3.3341669091467083,
+      "standardized_residual_rms": 1.8259701282186158,
+      "residual_rms_ppm": 116.17423739874941
+    }
+  },
+  "helium_spectrum": {
+    "n_bins": 12,
+    "core_n_bins": 3,
+    "core_definition_micron": "1.082\u20131.085",
+    "core_weighted_depth_ppm": 22390.465009352894,
+    "core_weighted_error_ppm": 62.409964286122275,
+    "sideband_weighted_depth_ppm": 20705.041529690632,
+    "sideband_weighted_error_ppm": 31.675082654245685,
+    "core_minus_sideband_ppm": 1685.4234796622623,
+    "core_minus_sideband_error_ppm": 69.9879597027114,
+    "diagonal_contrast_sigma": 24.081620421876185,
+    "peak_wavelength_micron": 1.083487749,
+    "peak_depth_ppm": 23952.83443,
+    "peak_error_ppm": 124.1428406
+  },
+  "helium_lightcurve": {
+    "n_observed_bins": 33,
+    "n_model_samples": 76,
+    "time_min_hours": -3.765303306252463,
+    "time_max_hours": 2.0948188007168937,
+    "minimum_flux": 0.9716106505513954,
+    "minimum_flux_time_hours": 0.26353064228896983,
+    "model_residual_rms_ppm": 312.0791643574917,
+    "model_residual_median_absolute_ppm": 216.24462005909174,
+    "uncertainty_note": "archive light curve has no uncertainty column; no goodness-of-fit probability computed"
+  },
+  "interpretation": "descriptive reproduction; use published retrieval/detection analysis for physical inference"
+}

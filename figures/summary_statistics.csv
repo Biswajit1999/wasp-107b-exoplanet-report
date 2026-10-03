@@ -1,12 +1,17 @@
 quantity,value,unit
 n_wavelength_bins,143,count
-wavelength_min,0.6036,micron
-wavelength_max,2.7872,micron
-weighted_mean_transit_depth,0.020620,(Rp/Rs)^2
-weighted_mean_transit_depth_error,0.000004,(Rp/Rs)^2
-depth_scatter_rms,0.000131,(Rp/Rs)^2
-peak_depth,0.021113,(Rp/Rs)^2
-peak_wavelength,2.7872,micron
-trough_depth,0.020348,(Rp/Rs)^2
-trough_wavelength,2.2886,micron
-peak_to_trough_amplitude,765.2,ppm
+weighted_mean_transit_depth,0.020620496896880426,(Rp/Rs)^2
+weighted_mean_transit_depth_error,3.692328426788103e-06,(Rp/Rs)^2
+helium_n_bins,12,see quantity
+helium_core_n_bins,3,see quantity
+helium_core_definition_micron,1.082–1.085,see quantity
+helium_core_weighted_depth_ppm,22390.465009352894,see quantity
+helium_core_weighted_error_ppm,62.409964286122275,see quantity
+helium_sideband_weighted_depth_ppm,20705.041529690632,see quantity
+helium_sideband_weighted_error_ppm,31.675082654245685,see quantity
+helium_core_minus_sideband_ppm,1685.4234796622623,see quantity
+helium_core_minus_sideband_error_ppm,69.9879597027114,see quantity
+helium_diagonal_contrast_sigma,24.081620421876185,see quantity
+helium_peak_wavelength_micron,1.083487749,see quantity
+helium_peak_depth_ppm,23952.83443,see quantity
+helium_peak_error_ppm,124.1428406,see quantity
