@@ -1,0 +1,14 @@
+{
+  "record": "https://doi.org/10.5281/zenodo.17085766",
+  "version": "1",
+  "publication_date": "2025-09-15",
+  "hash_method": "SHA-256 after CRLF-to-LF normalization",
+  "files": {
+    "niriss_soss_order1_transmission_spectrum.txt": {"source_name": "W107b_exoTEDRF_NIRISS_SOSS_O1.txt", "zenodo_md5": "6c983137b749a3032f154e89ce359efd", "sha256": "c0698d28a65276f3011c7b676bd7295d6fb31b75f8ab0ffe81e1d0d89401c209"},
+    "niriss_soss_order2_transmission_spectrum.txt": {"source_name": "W107b_exoTEDRF_NIRISS_SOSS_O2.txt", "zenodo_md5": "a55df76f175dfbfa116c1b6bd910f57b", "sha256": "5c91b07e6a27e9869918e5398e5333b6237a2e8d797f1f52e1e54468cf0fd6fe"},
+    "W107b_SCARLET_NIRISS_krishnamurthy_etal.txt": {"zenodo_md5": "52f90a081c608c25d9454c79f5e0f236", "sha256": "41bd0013435b70b5f1fe714f9c91f299d1e7f17441d2ca789b8dc786d5897c5b"},
+    "W107b_helium_transmission_NIRISS_krishnamurthy_etal.txt": {"zenodo_md5": "3a62454549bbf99cb5510fbde02e7673", "sha256": "cbb986e4ca616abc587f1dcdbb2a31713c9c8db21193bf453659136b0c7b4b19"},
+    "W107b_binned_Helium_lightcurve_exoTEDRF.txt": {"zenodo_md5": "7ecb76a586089f4b9fbd14e3424904df", "sha256": "fd0595e895e5b27759f73c61c6b86a4d375d5bf39783e224820f27ab04dbd93a"},
+    "W107b_binned_EvE_Helium_model_lightcurve.txt": {"zenodo_md5": "c353f924d5df8b900f06dcff6d4fab58", "sha256": "a3cb584dd22f683b0797d69e9a8411c038f90e0e11dd8ad64956d51416c2154d"}
+  }
+}
