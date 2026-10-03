@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WASP-107 b JWST Atmosphere Analysis | Biswajit Jana</title>
-<meta name="description" content="Report on WASP-107 b: real system parameters and a real JWST NIRISS SOSS transmission spectrum, with citations.">
+<meta name="description" content="Reproducible audit of WASP-107 b JWST/NIRISS data: broad transmission spectrum, resolved helium triplet, extended-thermosphere light curve, and model diagnostics.">
 <!-- SEO-DISCOVERY-START -->
 <link rel="canonical" href="https://biswajit1999.github.io/wasp-107b-exoplanet-report/">
 <link rel="author" href="https://biswajit1999.github.io/Biswajit_Jana.github.io/">
@@ -12,7 +12,7 @@
 <meta name="keywords" content="WASP-107 b, astrophysics, scientific computing, reproducible research, Biswajit Jana, open science, GitHub Pages">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta property="og:title" content="WASP-107 b JWST Atmosphere Analysis | Biswajit Jana">
-<meta property="og:description" content="Report on WASP-107 b: real system parameters and a real JWST NIRISS SOSS transmission spectrum, with citations.">
+<meta property="og:description" content="JWST/NIRISS audit of WASP-107 b's broad spectrum, resolved helium triplet, and extended-thermosphere light curve.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://biswajit1999.github.io/wasp-107b-exoplanet-report/">
 <meta property="og:image" content="https://biswajit1999.github.io/wasp-107b-exoplanet-report/figures/wasp107b_transmission_spectrum.png">
@@ -20,7 +20,7 @@
 <meta property="article:author" content="https://biswajit1999.github.io/Biswajit_Jana.github.io/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="WASP-107 b JWST Atmosphere Analysis | Biswajit Jana">
-<meta name="twitter:description" content="Report on WASP-107 b: real system parameters and a real JWST NIRISS SOSS transmission spectrum, with citations.">
+<meta name="twitter:description" content="JWST/NIRISS audit of WASP-107 b's broad spectrum, resolved helium triplet, and extended-thermosphere light curve.">
 <meta name="twitter:image" content="https://biswajit1999.github.io/wasp-107b-exoplanet-report/figures/wasp107b_transmission_spectrum.png">
 <script type="application/ld+json">
 {
@@ -44,7 +44,7 @@
       "@id": "https://biswajit1999.github.io/wasp-107b-exoplanet-report/#report",
       "headline": "WASP-107 b JWST Atmosphere Analysis",
       "name": "WASP-107 b JWST Atmosphere Analysis",
-      "description": "Report on WASP-107 b: real system parameters and a real JWST NIRISS SOSS transmission spectrum, with citations.",
+      "description": "Reproducible audit of the broad NIRISS spectrum, resolved helium triplet, and extended-thermosphere light curve of WASP-107 b.",
       "url": "https://biswajit1999.github.io/wasp-107b-exoplanet-report/",
       "mainEntityOfPage": "https://biswajit1999.github.io/wasp-107b-exoplanet-report/",
       "author": {
@@ -53,7 +53,7 @@
       "creator": {
         "@id": "https://biswajit1999.github.io/Biswajit_Jana.github.io/#person"
       },
-      "dateModified": "2026-08-16",
+      "dateModified": "2026-10-03",
       "inLanguage": "en",
       "isAccessibleForFree": true,
       "keywords": [
@@ -84,7 +84,7 @@
       "@type": "SoftwareSourceCode",
       "@id": "https://biswajit1999.github.io/wasp-107b-exoplanet-report/#code",
       "name": "WASP-107 b JWST Atmosphere Analysis",
-      "description": "Report on WASP-107 b: real system parameters and a real JWST NIRISS SOSS transmission spectrum, with citations.",
+      "description": "Code and data for a reproducible NIRISS atmosphere and helium-escape evidence audit of WASP-107 b.",
       "url": "https://biswajit1999.github.io/wasp-107b-exoplanet-report/",
       "codeRepository": "https://github.com/Biswajit1999/wasp-107b-exoplanet-report",
       "author": {
@@ -167,7 +167,7 @@ footer a:hover { color: var(--accent); }
   <header class="hero">
     <p class="kicker">Exoplanet Atmosphere Report · JWST NIRISS SOSS</p>
     <h1>WASP-107 b</h1>
-    <p class="tagline">An unusually puffy warm Neptune whose extended, low-density atmosphere makes it one of the clearest windows JWST has found into a giant planet's chemistry — photochemically produced SO2, and methane at a fraction of the abundance simple chemistry predicts.</p>
+    <p class="tagline">A low-density warm Neptune with a directly resolved metastable-helium signature and time-dependent absorption before, during, and after transit — an unusually detailed view of atmospheric escape.</p>
     <div class="badges">
       <span class="badge">Transit-discovered, 2017</span>
       <span class="badge">NASA Exoplanet Archive parameters</span>
@@ -199,7 +199,8 @@ footer a:hover { color: var(--accent); }
   <section>
     <h2>Why this planet is scientifically interesting</h2>
     <p>WASP-107 b's low mass paired with a Jupiter-scale radius gives it an unusually large atmospheric scale height — the same total temperature and gravity produce a much bigger, more observable signal per unit of atmospheric composition than a typical hot Jupiter. That combination made it an early, high-priority JWST target for atmospheric characterization.</p>
-    <p>Dyrek et al. (2024, <em>Nature</em>) used JWST's MIRI instrument to detect <strong>sulfur dioxide (SO2)</strong> in its atmosphere — a photochemical product, meaning it can only form if high-energy stellar radiation is actively driving chemistry in the upper atmosphere, not simply present from formation — and reported only an upper limit on methane (CH4), well below simple equilibrium-chemistry predictions. A follow-up NIRSpec study, Sing et al. (2024, <em>Nature</em>), pushed further and detected CH4 directly at 4.2σ, at an abundance of about 1.0 ± 0.5 ppm — roughly three orders of magnitude below what equilibrium chemistry alone would predict at this temperature. Read together, the two results tell a consistent story: methane isn't absent, it's severely depleted, most likely by the same vigorous vertical mixing that dredges up hot, methane-poor gas from deep in the planet and by ongoing photochemical destruction.</p>
+    <p>Krishnamurthy et al. used NIRISS/SOSS to resolve the 1.083 µm metastable-helium triplet and follow helium-band absorption through time. They report absorption beginning about 1.5 hours before ingress, a 17σ pre-transit signal, a maximum depth of 2.395% ± 0.01%, and an EvE thermosphere model extending tens of planetary radii. Their atmosphere retrieval also detects water and attributes the short-wavelength slope primarily to unocculted stellar spots at 5.2σ, rather than simply to haze.</p>
+    <p>Longer-wavelength MIRI and NIRSpec studies provide complementary chemistry: sulfur dioxide, methane depleted relative to equilibrium, water, carbon dioxide, and carbon monoxide. Those results are panchromatic context; the analysis below is restricted to the six released NIRISS products.</p>
     <div class="figure">
       <img src="images/3d-render.png" alt="Close-up 3D-rendered concept of WASP-107 b's extended, low-density atmosphere">
       <p class="ai-credit">AI-generated 3D-render-style concept of WASP-107 b's puffy atmosphere — not an actual image of the planet.</p>
@@ -207,27 +208,28 @@ footer a:hover { color: var(--accent); }
   </section>
 
   <section>
-    <h2>Transmission spectrum: JWST NIRISS SOSS</h2>
-    <p>The figure is generated directly from reduced JWST data: NIRISS Single Object Slitless Spectroscopy (SOSS) transmission-spectrum products for WASP-107 b, spectral orders 1 and 2 combined, from Krishnamurthy et al. (Zenodo record 17085766). Transit depth (Rp/Rs)² is plotted against wavelength with each point's own measurement uncertainty.</p>
+    <h2>NIRISS atmosphere and escape evidence</h2>
+    <p>The complete Zenodo release contains more than the two broad spectral orders: it includes the SCARLET best-fit atmosphere model, a 12-bin R≈700 spectrum across the helium triplet, the binned helium light curve, and its EvE thermosphere model. The four panels keep broad atmospheric structure, narrow helium absorption, and time dependence as separate observables.</p>
     <div class="figure">
-      <img src="figures/wasp107b_transmission_spectrum.png" alt="WASP-107 b JWST NIRISS SOSS transmission spectrum with residuals panel">
-      <figcaption>Top: transit depth vs. wavelength, 143 wavelength bins spanning 0.6–2.8 microns, with the weighted-mean depth marked. Bottom: residuals relative to that mean, in ppm. Generated by <code>scripts/analyze_spectrum.py</code> from the bundled data files.</figcaption>
+      <img src="figures/wasp107b_transmission_spectrum.png" alt="Four-panel WASP-107 b NIRISS atmosphere and helium escape evidence audit">
+      <figcaption>A: broad spectrum and released SCARLET curve. B: standardized shape residuals. C: resolved helium triplet. D: observed helium light curve and EvE model. Generated by <code>scripts/analyze_spectrum.py</code>.</figcaption>
     </div>
     <div class="stat-grid" id="stats">
       <div class="stat"><span>Wavelength bins</span><strong>143</strong></div>
-      <div class="stat"><span>Weighted mean depth</span><strong>2.062%</strong></div>
-      <div class="stat"><span>Depth precision</span><strong>±0.0004%</strong></div>
-      <div class="stat"><span>Peak-to-trough</span><strong>765 ppm</strong></div>
+      <div class="stat"><span>Resolved He bins</span><strong>12</strong></div>
+      <div class="stat"><span>He core excess</span><strong>1685 ± 70 ppm</strong></div>
+      <div class="stat"><span>Peak He depth</span><strong>2.395%</strong></div>
     </div>
-    <p class="callout">Reading the shape: the rise toward longer wavelengths (beyond ~2.4 microns) and the bump near 1.4 microns are consistent with water-vapor absorption, the dominant near-infrared feature this instrument is most sensitive to — a qualitative read of the shape, not a quantitative molecular-detection test on its own. The peak-to-trough figure (765 ppm) is an extreme-value statistic with no uncertainty attached, more sensitive to a single noisy bin than a proper feature measurement would be. The SO2 and methane results referenced above come from separate, longer-wavelength MIRI and NIRSpec observations not included in this NIRISS dataset — this figure shows the near-infrared water signature only, not the full multi-instrument picture.</p>
+    <p class="callout">The predeclared 1.082–1.085 µm core is 1685.4 ± 70.0 ppm above the remaining released R≈700 bins under a diagonal-error calculation. Its 24.1σ ratio is a compact reproduction diagnostic—not the paper's detection significance—because it does not include spectral covariance, time correlation, or a look-elsewhere correction. Use the publication's full analysis for physical inference.</p>
+    <p>The released SCARLET curve, after one diagnostic vertical offset, has standardized-residual RMS 1.826 against the same spectrum used for the retrieval. This is not independent validation or a Bayes factor. The EvE light-curve residual RMS is 312.1 ppm, but the archived light-curve table has no uncertainty column, so no calibrated goodness-of-fit probability is reported.</p>
   </section>
 
   <section>
     <h2>Data and method notes</h2>
-    <p>System parameters were queried live from the NASA Exoplanet Archive's TAP service (<code>pscomppars</code> table). The transmission spectrum is the reduced NIRISS SOSS data product released publicly by the observing team on Zenodo. See <a href="data/">data/</a> for the raw files and <a href="scripts/analyze_spectrum.py">scripts/analyze_spectrum.py</a> for the exact analysis that produced the figure and statistics above (<code>python scripts/analyze_spectrum.py</code> to rerun it).</p>
+    <p>All six numeric inputs are unmodified products from <a href="https://doi.org/10.5281/zenodo.17085766">Zenodo record 17085766</a>. The manifest records the repository copies' normalized SHA-256 hashes and Zenodo's MD5 values. Run <code>python scripts/validate_sources.py</code> and then <code>python scripts/analyze_spectrum.py</code>. Results are available as <a href="figures/analysis_summary.json">structured JSON</a> and <a href="figures/broad_spectrum_residuals.csv">bin-level CSV</a>.</p>
     <div class="figure">
       <img src="images/instrument.png" alt="AI-generated illustration of the James Webb Space Telescope">
-      <p class="ai-credit">AI-generated illustration of the James Webb Space Telescope, whose NIRISS instrument took the real transmission spectrum plotted above (with the SO2 and methane detections referenced above coming from separate MIRI and NIRSpec observations). Not an official mission photograph — see <a href="https://www.jwst.nasa.gov/">NASA/JWST</a> for real imagery.</p>
+      <p class="ai-credit">AI-generated illustration of JWST, whose NIRISS instrument obtained the spectra and helium time series analyzed above. Not an official mission photograph — see <a href="https://science.nasa.gov/mission/webb/">NASA Webb</a> for mission imagery.</p>
     </div>
   </section>
 
@@ -236,7 +238,8 @@ footer a:hover { color: var(--accent); }
     <ol class="refs">
       <li>Dyrek, A. et al., 2024. SO2, silicate clouds, but no CH4 detected in a warm Neptune with JWST. <em>Nature</em>, 625, pp.51–54.</li>
       <li>Sing, D.K. et al., 2024. A warm Neptune's methane reveals core mass and vigorous atmospheric mixing. <em>Nature</em>, 630, pp.831-835 (arXiv:2405.11027) — the follow-up methane detection referenced above.</li>
-      <li>Krishnamurthy, V. et al. NIRISS-SOSS transmission-spectrum reduction of WASP-107 b. Zenodo record <a href="https://doi.org/10.5281/zenodo.17085766">10.5281/zenodo.17085766</a>.</li>
+      <li>Krishnamurthy, V. et al., 2026. Continuous helium absorption from both the leading and trailing tails of WASP-107 b. <em>Nature Astronomy</em>, 10, pp.258–270; <a href="https://arxiv.org/abs/2505.20588">arXiv:2505.20588</a>.</li>
+      <li>Krishnamurthy, V. et al. Complete NIRISS-SOSS data products. Zenodo record <a href="https://doi.org/10.5281/zenodo.17085766">10.5281/zenodo.17085766</a>.</li>
       <li>Piaulet, C. et al., 2021. Evidence for a Large, Hot Core in the Warm Neptune WASP-107 b. <em>The Astronomical Journal</em>, 161, 70.</li>
       <li>Sing, D.K. et al., 2019. Helium in the eroding atmosphere of an exoplanet. <em>The Astronomical Journal</em>, 158, 91 (WASP-107 b helium detection).</li>
       <li>NASA Exoplanet Archive, <a href="https://exoplanetarchive.ipac.caltech.edu/">exoplanetarchive.ipac.caltech.edu</a> — system parameters, queried live via TAP.</li>
