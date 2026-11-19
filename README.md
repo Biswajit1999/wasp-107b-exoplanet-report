@@ -8,6 +8,12 @@ broad 0.6–2.8 µm transmission spectrum to the resolved metastable-helium
 triplet and its time-dependent absorption. The peer-reviewed paper remains the
 authority for retrieval and atmospheric-escape inference.
 
+## Research evidence and downloads
+
+[Open the evidence browser](https://biswajit1999.github.io/wasp-107b-exoplanet-report/evidence.html) for 11 selected files, including [`analysis_summary.json`](figures/analysis_summary.json). Each file has a download link and SHA-256 digest.
+
+Rebuild the inventory and browser with `python scripts/evidence_catalog.py` and `python scripts/render_evidence_page.py`.
+
 ## Scientific result in context
 
 The archive records a maximum helium-band transit depth of
