@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "project": "WASP-107 b — NIRISS atmosphere and escape audit",
+  "repository": "https://github.com/Biswajit1999/wasp-107b-exoplanet-report",
+  "files": [
+    {
+      "label": "Data source notes",
+      "path": "data/SOURCE.md",
+      "role": "Data and provenance",
+      "bytes": 1154,
+      "sha256": "1208a878de0089bafc953e31c92658ff443ada2622dcba374ddbe58e59a8f5c4",
+      "hash_basis": "LF-normalised text",
+      "format": "MD"
+    },
+    {
+      "label": "W107b helium transmission NIRISS krishnamurthy etal",
+      "path": "data/W107b_helium_transmission_NIRISS_krishnamurthy_etal.txt",
+      "role": "Data and provenance",
+      "bytes": 624,
+      "sha256": "cbb986e4ca616abc587f1dcdbb2a31713c9c8db21193bf453659136b0c7b4b19",
+      "hash_basis": "LF-normalised text",
+      "format": "TXT"
+    },
+    {
+      "label": "Niriss soss order1 transmission spectrum",
+      "path": "data/niriss_soss_order1_transmission_spectrum.txt",
+      "role": "Data and provenance",
+      "bytes": 3691,
+      "sha256": "c0698d28a65276f3011c7b676bd7295d6fb31b75f8ab0ffe81e1d0d89401c209",
+      "hash_basis": "LF-normalised text",
+      "format": "TXT"
+    },
+    {
+      "label": "Niriss soss order2 transmission spectrum",
+      "path": "data/niriss_soss_order2_transmission_spectrum.txt",
+      "role": "Data and provenance",
+      "bytes": 1100,
+      "sha256": "5c91b07e6a27e9869918e5398e5333b6237a2e8d797f1f52e1e54468cf0fd6fe",
+      "hash_basis": "LF-normalised text",
+      "format": "TXT"
+    },
+    {
+      "label": "W107b SCARLET NIRISS krishnamurthy etal",
+      "path": "data/W107b_SCARLET_NIRISS_krishnamurthy_etal.txt",
+      "role": "Data and provenance",
+      "bytes": 15559,
+      "sha256": "41bd0013435b70b5f1fe714f9c91f299d1e7f17441d2ca789b8dc786d5897c5b",
+      "hash_basis": "LF-normalised text",
+      "format": "TXT"
+    },
+    {
+      "label": "W107b binned EvE Helium model lightcurve",
+      "path": "data/W107b_binned_EvE_Helium_model_lightcurve.txt",
+      "role": "Data and provenance",
+      "bytes": 3881,
+      "sha256": "a3cb584dd22f683b0797d69e9a8411c038f90e0e11dd8ad64956d51416c2154d",
+      "hash_basis": "LF-normalised text",
+      "format": "TXT"
+    },
+    {
+      "label": "W107b binned Helium lightcurve exoTEDRF",
+      "path": "data/W107b_binned_Helium_lightcurve_exoTEDRF.txt",
+      "role": "Data and provenance",
+      "bytes": 1705,
+      "sha256": "fd0595e895e5b27759f73c61c6b86a4d375d5bf39783e224820f27ab04dbd93a",
+      "hash_basis": "LF-normalised text",
+      "format": "TXT"
+    },
+    {
+      "label": "Analysis summary",
+      "path": "figures/analysis_summary.json",
+      "role": "Tables and numerical results",
+      "bytes": 1834,
+      "sha256": "35d1fcb05264e6bb85318f88e0636b6d2c459d2eab1108b81a589b61e6d50ce8",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "source",
+        "broad_spectrum",
+        "helium_spectrum",
+        "helium_lightcurve",
+        "interpretation"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Summary statistics",
+      "path": "figures/summary_statistics.csv",
+      "role": "Tables and numerical results",
+      "bytes": 896,
+      "sha256": "b90894ed9c8ea3cb7e21f24ccdb7cf204f3464d22eeab48a14b3c62d13838b51",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 16,
+      "columns": 3,
+      "headers": [
+        "quantity",
+        "value",
+        "unit"
+      ],
+      "preview": [
+        [
+          "n_wavelength_bins",
+          "143",
+          "count"
+        ],
+        [
+          "weighted_mean_transit_depth",
+          "0.020620496896880426",
+          "(Rp/Rs)^2"
+        ],
+        [
+          "weighted_mean_transit_depth_error",
+          "3.692328426788103e-06",
+          "(Rp/Rs)^2"
+        ],
+        [
+          "helium_n_bins",
+          "12",
+          "see quantity"
+        ]
+      ]
+    },
+    {
+      "label": "Broad spectrum residuals",
+      "path": "figures/broad_spectrum_residuals.csv",
+      "role": "Tables and numerical results",
+      "bytes": 13559,
+      "sha256": "6a1884b5393c0a4990bf13de4714d47b751f7878c530a98b6221a0da6aa7724e",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 143,
+      "columns": 7,
+      "headers": [
+        "wavelength_micron",
+        "order",
+        "depth",
+        "uncertainty",
+        "scarlet_plus_offset",
+        "residual_ppm",
+        "standardized_residual"
+      ],
+      "preview": [
+        [
+          "0.6036",
+          "2",
+          "0.0205428",
+          "0.00015865",
+          "0.020870978506262364",
+          "-328.1785062623638",
+          "-2.06856921690743"
+        ],
+        [
+          "0.6102",
+          "2",
+          "0.0203914",
+          "0.0001496",
+          "0.02086479416172505",
+          "-473.39416172504855",
+          "-3.1643994767717145"
+        ],
+        [
+          "0.6168",
+          "2",
+          "0.020755700000000002",
+          "0.0001285",
+          "0.02089455730191955",
+          "-138.85730191954755",
+          "-1.0806015713583468"
+        ],
+        [
+          "0.6235",
+          "2",
+          "0.0206882",
+          "0.00011995",
+          "0.020929827211806726",
+          "-241.62721180672614",
+          "-2.014399431485837"
+        ]
+      ]
+    },
+    {
+      "label": "Wasp107b transmission spectrum",
+      "path": "figures/wasp107b_transmission_spectrum.png",
+      "role": "Figures",
+      "bytes": 405964,
+      "sha256": "8db5b3a8aae18639948dc68304112f75a23ed2765f3a09a63e3028efab82f5e4",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    }
+  ]
+}

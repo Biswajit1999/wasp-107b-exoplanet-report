@@ -1,0 +1,61 @@
+{
+  "project": "WASP-107 b — NIRISS atmosphere and escape audit",
+  "repository": "https://github.com/Biswajit1999/wasp-107b-exoplanet-report",
+  "files": [
+    {
+      "label": "Data source notes",
+      "path": "data/SOURCE.md",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "W107b helium transmission NIRISS krishnamurthy etal",
+      "path": "data/W107b_helium_transmission_NIRISS_krishnamurthy_etal.txt",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Niriss soss order1 transmission spectrum",
+      "path": "data/niriss_soss_order1_transmission_spectrum.txt",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Niriss soss order2 transmission spectrum",
+      "path": "data/niriss_soss_order2_transmission_spectrum.txt",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "W107b SCARLET NIRISS krishnamurthy etal",
+      "path": "data/W107b_SCARLET_NIRISS_krishnamurthy_etal.txt",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "W107b binned EvE Helium model lightcurve",
+      "path": "data/W107b_binned_EvE_Helium_model_lightcurve.txt",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "W107b binned Helium lightcurve exoTEDRF",
+      "path": "data/W107b_binned_Helium_lightcurve_exoTEDRF.txt",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Analysis summary",
+      "path": "figures/analysis_summary.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Summary statistics",
+      "path": "figures/summary_statistics.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Broad spectrum residuals",
+      "path": "figures/broad_spectrum_residuals.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Wasp107b transmission spectrum",
+      "path": "figures/wasp107b_transmission_spectrum.png",
+      "role": "Figures"
+    }
+  ]
+}
